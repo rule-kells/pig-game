@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <title>Pig Dice Game</title>
+</head>
+
+<body>
+
+    <main class="container d-grid">
+        <button class="btn btn--reset">New Game</button>
+        <section class="player player--0 player--active">
+            <header class="player__header">
+                <h2 class="player__title player__title--0">Player 1</h2>
+                <p class="score score--0">1</p>
+            </header>
+            <section class="current">
+                <h3 class="current--title">Current</h3>
+                <p class="current--score current--0">0</p>
+            </section>
+        </section>
+
+        <img class="dice" src="./images/dice-1.png" alt="dice">
+
+        <div class="inGame--container">
+            <button class="btn btn--roll">Roll Dice</button>
+            <button class="btn btn--hold">Hold</button>
+            <div class="score__input--container">
+                <p class="score__input-content">Play to (Max-100):</p>
+                <input id="score__input" type="number" value="100" min="0" max="100">
+            </div>
+        </div>
+
+        <section class="player player--1">
+            <header class="player__header">
+                <h2 class="player__title player__title--1">Player 2</h2>
+                <p class="score score--1">2</p>
+            </header>
+            <section class="current">
+                <h3 class="current--title">Current</h3>
+                <p class="current--score current--1">0</p>
+            </section>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
